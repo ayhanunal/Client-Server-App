@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="2dp"
+        android:onClick="back"
+        android:text="﹀"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="103dp"
+        android:onClick="right"
+        android:text="》"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="36dp"
+        android:onClick="left"
+        android:text="《"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="403dp"
+        android:layout_height="477dp"
+        android:layout_marginBottom="6dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView00"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView01"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView02"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="visible"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView21"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="0"
+            app:layout_row="3"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="1"
+            app:layout_row="3"
+            app:srcCompat="@drawable/simsoft_box" />
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="133dp"
+            android:layout_height="113dp"
+            android:visibility="invisible"
+            app:layout_column="2"
+            app:layout_row="3"
+            app:srcCompat="@drawable/simsoft_box" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:onClick="next"
+        android:text="︿"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/frameInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="27dp"
+        android:background="#89FF00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
