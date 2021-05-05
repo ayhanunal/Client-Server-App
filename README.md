@@ -11,9 +11,8 @@
 <hr>
 
 <p align="center">
-  <img src="../master/ss/1.png" width="413" height="712">     
-  <img src="../master/ss/2.png" width="413" height="712">    
-  <img src="../master/ss/3.png" width="413" height="712">
+  <img src="../master/1.png" width="913" height="712">     
+  <img src="../master/2.png" width="913" height="712">    
 </p>
 
 
